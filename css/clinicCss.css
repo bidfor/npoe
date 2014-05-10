@@ -1,0 +1,26 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footerClass
+{
+	background-image:url(../image/footer.jpg);
+    background-repeat:no-repeat;
+    background-size: contain;
+    height:250px;
+    width:100%;
+    background-size:100% 250px;
+    margin:0 auto;
+}
+
+.headerClass
+{
+    background-image:url(../image/header.jpg);
+    background-repeat:no-repeat;
+    background-size: contain;
+    height:190px;
+    width:100%;
+    background-size:100% 190px;
+    margin-top:0px;
+}
