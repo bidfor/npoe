@@ -13,7 +13,8 @@ class clinicTemplate{
 		    	$code .= '<link rel="stylesheet" href="../css/clinicCss.css" type="text/css" />';
 			$code .= '</head>';
 			$code .= '<body>';
-				$code .= '<header><div id="headerDiv" class="headerClass"></div></header>';
+				$code .= '<div id="headerFlowerDiv" class="headerFlowerClass"></div>';
+				$code .= '<div id="headerDiv" class="headerClass"></div>';
 		echo $code;
 	}
 
