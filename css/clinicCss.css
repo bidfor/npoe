@@ -5,14 +5,13 @@ html, body {
 
 .footerClass
 {
-	background-image:url(../image/footer.png);
+    background-image:url(../image/footer.png);
     background-repeat:no-repeat;
     background-size: contain;
     height:120px;
     width:100%;
     background-size:100% 120px;
     position: absolute;
-    bottom: 0;
 }
 
 .headerClass
@@ -23,6 +22,9 @@ html, body {
     height:130px;
     width:100%;
     background-size:100% 130px;
+    position: relative;
+    top:0px;
+    z-index: 0;
     -webkit-box-shadow: 0px 0px 8px 2px #000000; /*webkit is for chrome/safari/opera*/
        -moz-box-shadow: 0px 0px 8px 2px #000000; /*moz is for firefox*/
             box-shadow: 0px 0px 8px 2px #000000; /*all*/
@@ -34,7 +36,13 @@ html, body {
     height:85px;
     width:425px;
     background-size:425px 85px;
-    position: fixed;
+    position: absolute;
     top:0px;
     left:0px;
+    z-index: 1;
+}
+
+.contentClass
+{   
+    position: relative;
 }
