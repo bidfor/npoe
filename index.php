@@ -6,7 +6,7 @@
 
 <? $clinicTemplate->header();?>
 <? while($i <= 10){
-	echo '<br>a'; $i++;
+	echo '<br>ah'; $i++;
 } ?>
 <? $clinicTemplate->footer();?>
 
