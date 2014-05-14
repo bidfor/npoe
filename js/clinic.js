@@ -6,11 +6,41 @@ var host = window.location.hostname;
 
 slideImgHeight();
 
-$('.menuClass li').click(function(e){
-    $('.menuClassClicked').removeClass('menuClassClicked');
-    $(this).addClass('menuClassClicked');
+$('#homeBtn').click(function(){
+    document.location.href = 'index.php';
 });
 
-$('#aboutUsBtn').click(function(e){
-    document.location.href = '/aboutUs.php';
+$('#servicesBtn').click(function(){
+    document.location.href = 'services.php';
 });
+
+$('#skinCareBtn').click(function(){
+    document.location.href = 'aboutUs.php';
+});
+
+$('#aboutUsBtn').click(function(){
+    document.location.href = 'aboutUs.php';
+});
+
+$('#contactBtn').click(function(){
+    document.location.href = 'aboutUs.php';
+});
+
+function checkServices(data){
+	/*
+	$('.sliderClass').animate({
+        width: 'toggle'
+    }, "slow",function(){
+    });*/
+}
+  $('#nav > li > a').click(function(){
+    if ($(this).attr('class') != 'active'){
+      $('#nav li ul').slideUp();
+      $(this).next().slideToggle();
+      $('#nav li a').removeClass('mainLiClassActive');
+      $(this).addClass('mainLiClassActive');
+    }
+  });
+
+
+

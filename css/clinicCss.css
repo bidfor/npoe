@@ -6,14 +6,15 @@ html, body {
 
 .menuClass{
     color: #5d5139;
-    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
     margin-right: 50px;
     min-width: 500px;
 }
 
 .menuClass li{
     height:24px;
-    margin-top: 85px;
+    margin-top: 87px;
     margin-right: 40px;
     display:inline-block;
     float:right;
@@ -37,6 +38,26 @@ html, body {
     width:100%;
     background-size:100% 120px;
     position: absolute;
+    color: white;
+}
+
+.footerClass li
+{   
+    margin-top: 40px;
+    display:inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.subFooterClass{
+    background-image:url(../image/subFooter.png);
+    background-repeat:no-repeat;
+    background-size: contain;
+    height:800px;
+    width:100%;
+    background-size:100% 800px;
+    position: relative;
+    color: white;
 }
 
 .headerClass
@@ -90,5 +111,77 @@ html, body {
     background-image: url(../image/loading.gif);
     opacity: 0.6;
     z-index: 999;
+}
 
+.bannerClass{
+    height:400px;
+    width:100%;
+    text-align: left;
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.subFooterContentClass{
+    width:100%;
+    color: black;
+}
+
+.bannerClass p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#nav { /*red*/
+    list-style-type: none;
+    text-align: left;
+    width:220px;
+    height:400px;
+    
+}
+
+#nav li a { 
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+#nav li ul {
+
+    display: none;
+    list-style:none;
+}
+
+.mainLiClass{
+    line-height: 50px;
+    min-height: 50px;
+    border-bottom: 2px solid #d6cdbd;
+}
+
+.mainLiClass a:hover{
+    margin-top: 3px;
+    display: block;
+    height: 44px;
+    background-color: #d6cdbd;
+}
+
+.subUlClass a:hover{
+    background-color: #eeeeee;
+    margin-bottom: 5px;
+}
+
+.subUlClass li{
+    min-height: 40px;
+}
+
+.servicesPClass{
+    margin-left: 50px;
+    text-align: left;
+    font-size:28px;
+}
+
+.mainLiClassActive{
+    margin-top: 3px;
+    display: block;
+    height: 44px;
+    background-color: #d6cdbd;
 }
