@@ -1,0 +1,7 @@
+<?php
+
+?>
+
+
+
+error 404 page not found

@@ -1,5 +1,5 @@
 <?php
-
+include_once($_SERVER["DOCUMENT_ROOT"]."/class/config.php");
 class clinicTemplate{
 
 	function clinicTemplate($language){
@@ -18,11 +18,11 @@ class clinicTemplate{
     			$code .= '<meta http-equiv="Content-Type" content="text/html; charset=utf-8">';
 		    	$code .= '<script src="js/jquery-1.11.1.min.js"></script>';
 		    	$code .= '<script src="js/clinic.js" defer></script>';
-		    	$code .= '<script src="js/jquery.fs.shifter.js"></script>';
-				$code .= '<link href="css/jquery.fs.shifter.css" rel="stylesheet">';
 		    	$code .= '<link rel="stylesheet" href="css/clinicCss.css" type="text/css"/>';
 			$code .= '</head>';
 			$code .= '<body>';
+				$code .= '<div id="backGroundDiv" class="backGroundClass"></div>';
+				$code .= '<div id="logoDiv" class="logoClass"></div>';
 				$code .= '<div id="headerFlowerDiv" class="headerFlowerClass"></div>';
 				$code .= '<div id="headerDiv" class="headerClass">';
 					$code .= '<ul class="menuClass">';
@@ -86,7 +86,7 @@ class clinicTemplate{
 						$code .= '<li style="margin-left:5%">'.$lang["10006"].'</li>';
 						$code .= '<li>|</li>';
 						$code .= '<li>Privacy policy</li>';
-						$code .= '<li style="margin-left:45%">'.$lang["10007"].'</li>';
+						$code .= '<li style="margin-left:35%">'.$lang["10007"].'</li>';
 					$code .= '</ul>';
 				$code .= '</div>';
 			$code  .= '</body>';
@@ -125,7 +125,45 @@ class clinicTemplate{
 	}
 
 	function aboutUs(){
-		$code = '<div style="display:inline-block;"><img src="http://www.pilgrimshospices.org/wp-content/uploads/artworks-000050032335-le33za-original.jpg" style="height:500px;width:1000px; display:inline-block;"/><p style="font-size:30px; display:inline-block;">Fuck Jason o0o0o0o!</p> </div>';
+		
+		$code .= '<div id="aboutUsDiv" class="aboutUsClass">';
+					$code .= '<div style="font-size:28px; width:90%; text-align:left; margin:auto; border-bottom:2px dotted #d6cdbd;">About Us</div>';
+					$code .= '<table border="0" style="width:90%;text-align:left;margin:auto;">';
+						$code .= '<tr>';
+							$code .= '<td>';
+								$code .= '<ul class="aboutUsListClass">';
+
+									$code .= '<li class="aboutUsMainLiClass" style="border-top:2px solid #d6cdbd;">';
+									$code .= '<div id="tempoHoverDiv" class="tempoHoverClass">a</div>';
+									$code .= '<a href="#"><span style="visibility:hidden;">ha</span> The Doctors <span>+</span></a>';
+									$code .= '</li>';
+
+									$code .= '<li class="aboutUsMainLiClass">';
+									$code .= '<div class="tempoHoverClass">a</div>';
+									$code .= '<a href="#"><span style="visibility:hidden;">ha</span> The Team <span>+</span></a>';
+									$code .= '</li>';
+
+									$code .= '<li class="aboutUsMainLiClass">';
+									$code .= '<div class="tempoHoverClass">a</div>';
+									$code .= '<a href="#"><span style="visibility:hidden;">ha</span> The Clinic <span>+</span></a>';
+									$code .= '</li>';
+
+								$code .= '</ul>';
+								$code .='</td>';
+							$code .= '</tr>';
+					$code .= '</table>';
+						//$code .= '<img id="doctorImg" style="max-width:1232px; max-height:560px" height="392px" width="862px" src="../image/doctors.jpg"/>';
+						//$code .= '<div>';
+							//$code .= 'Dr. Kavin(essss)<br>';
+							//$code .= 'Dr. Lynda(dero)';
+						//$code .= '</div>';
+					$code .= '<form method="post" action="">';
+						$code .= '<fieldset>';
+				      	$code .= '<input type="text" name="q" />';
+				      	$code .= '<input type="submit" value="Search" />';
+					   	$code .= '</fieldset>';
+					$code .= '</form>';
+		$code .= '</div>';
 		echo $code;
 	}
 
@@ -158,15 +196,15 @@ class clinicTemplate{
 					$code .= '</ul>';
 				$code .= '</li>';
 
-				$code .= '<li class="mainLiClass">';
+				$code .= '<li class="mainLiClass" style="border-top:2px solid #d6cdbd;">';
 				$code .= '<a href="#"><span style="visibility:hidden;">ha</span> Arms <span style="margin-left:130px;">+</span></a>';
 					$code .= '<ul class="subUlClass">';
-						$code .= '<li><a href="#">-haha</a></li>';
-						$code .= '<li><a href="#">-haha</a></li>';
+						$code .= '<li><a href="#">-1</a></li>';
+						$code .= '<li><a href="#">-2</a></li>';
 					$code .= '</ul>';
 				$code .= '</li>';
 
-				$code .= '<li class="mainLiClass">';
+				$code .= '<li class="mainLiClass" style="border-top:2px solid #d6cdbd; border-bottom:2px solid #d6cdbd;">';
 				$code .= '<a href="#"><span style="visibility:hidden;">ha</span> Tight <span style="margin-left:132px;">+</span></a>';
 					$code .= '<ul class="subUlClass">';
 						$code .= '<li><a href="#">-1</a></li>';
@@ -176,17 +214,52 @@ class clinicTemplate{
 					$code .= '</ul>';
 				$code .= '</li>';
 
-				$code .= '<li class="mainLiClass">';
-				$code .= '<a href="#"><span style="visibility:hidden;">ha</span> Gugu <span style="margin-left:131px;">+</span></a>';
-					$code .= '<ul class="subUlClass">';
-						$code .= '<li><a href="#">-Expand gugu</a></li>';
-						$code .= '<li><a href="#">-Steel gugu</a></li>';
-						$code .= '<li><a href="#">-Wooden gugu</a></li>';
-					$code .= '</ul>';
-				$code .= '</li>';
-
 			$code .= '</ul>';
 		$code .= '</div>';
+		echo $code;
+	}
+
+	function contact(){
+		global $sys;
+		$lang =$this->lang;
+		$code  = '<div style="background-color:white;height:500px;">';
+					$code .='<style type="text/css">';
+			      $code .='html { height: 100% }';
+			      $code .='body { height: 100%; margin: 0; padding: 0 }';
+			      $code .='#map-canvas { height: 50%; width: 50% }';
+			    $code .='</style>';
+			    $code .='<script type="text/javascript"';
+			      $code .='src="https://maps.googleapis.com/maps/api/js?key='.$sys["googleAPI"].'&sensor=TRUE">';
+			    $code .='</script>';
+			    $code .='<script type="text/javascript">';
+			    	$code .= 'var map;';
+			    	$code .= "var MY_MAPTYPE_ID = 'custom_style';";
+			      $code .='function initialize() {';
+
+			      	$code .= 'var featureOpts = [{"stylers": [{ "saturation": -100 } ] } ];';
+
+			      	$code .= 'var myLatlng = new google.maps.LatLng(1.515936,103.668016);';
+			        $code .='var mapOptions = {';
+			          $code .='center: myLatlng,';
+			          $code .='zoom: 16,';
+			          $code .= "mapTypeControlOptions: {mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID] }, mapTypeId: MY_MAPTYPE_ID";
+			        $code .='};';
+			        $code .='var map = new google.maps.Map(document.getElementById("map-canvas"),';
+			            $code .='mapOptions);';
+					$code .= "var styledMapOptions = {name: 'Custom Style'};";
+						$code .= 'var marker = new google.maps.Marker({';
+						   $code .= ' position: myLatlng,';
+						   $code .= ' map: map,';
+						   $code .= ' title:"Hello World!"';
+						$code .= '});';
+						$code .= "var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions); map.mapTypes.set(MY_MAPTYPE_ID, customMapType);";
+			      $code .= '}';
+			      $code .='google.maps.event.addDomListener(window, "load", initialize);';
+			    $code .='</script>';
+
+			    $code .= '<div id="map-canvas"></div>';
+
+		$code .='</div>';
 		echo $code;
 	}
 }

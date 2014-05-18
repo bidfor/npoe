@@ -7,40 +7,46 @@ var host = window.location.hostname;
 slideImgHeight();
 
 $('#homeBtn').click(function(){
-    document.location.href = 'index.php';
+    document.location.href = 'index';
 });
 
 $('#servicesBtn').click(function(){
-    document.location.href = 'services.php';
+    document.location.href = 'services';
 });
 
 $('#skinCareBtn').click(function(){
-    document.location.href = 'aboutUs.php';
+    document.location.href = 'aboutUs';
 });
 
 $('#aboutUsBtn').click(function(){
-    document.location.href = 'aboutUs.php';
+    document.location.href = 'aboutUs';
 });
 
 $('#contactBtn').click(function(){
-    document.location.href = 'aboutUs.php';
+    document.location.href = 'contact';
 });
 
-function checkServices(data){
-	/*
-	$('.sliderClass').animate({
-        width: 'toggle'
-    }, "slow",function(){
-    });*/
-}
   $('#nav > li > a').click(function(){
-    if ($(this).attr('class') != 'active'){
+    if ($(this).attr('class') != 'mainLiClassActive'){
       $('#nav li ul').slideUp();
       $(this).next().slideToggle();
       $('#nav li a').removeClass('mainLiClassActive');
       $(this).addClass('mainLiClassActive');
-    }
+    }else
+    {
+        $('#nav li ul').slideUp();
+        $(this).removeClass('mainLiClassActive');
+        
+    }
   });
+
+$('.aboutUsMainLiClass').hover(function(){
+        $(this).find('div:first').css('visibility','visible');
+    }, function(){
+        $(this).find('div:first').css('visibility','hidden');
+    }
+);
+
 
 
 
