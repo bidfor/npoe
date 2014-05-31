@@ -6,7 +6,7 @@
 
 <? 	
 	$clinicTemplate->header("aboutUs");
-	$clinicTemplate->aboutUs('doctor');
+	$clinicTemplate->aboutUs('team');
  	$clinicTemplate->footer();
 
 ?>

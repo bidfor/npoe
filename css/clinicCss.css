@@ -5,7 +5,7 @@ html, body {
 }
 
 .logoClass{
-    background-image:url(../image/logo.png);
+    background-image:url(../image/revivalLogo.png);
     background-repeat:no-repeat;
     background-size: contain;
     height:90px;
@@ -162,9 +162,8 @@ html, body {
     
 }
 
-#nav li a { 
-    color: black;
-    background-color: white;
+#nav li div { 
+    background-color: transparent;
     text-decoration: none;
     display: block;
 }
@@ -179,41 +178,89 @@ html, body {
     line-height: 50px;
     min-height: 50px;
 }
-
-.mainLiClass a:hover{
-    background-color: #d6cdbd !important;
-    margin-top: 3px;
+.mainLiClass div{
     display: block;
-    height: 44px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
-.subUlClass a:hover{
+.mainLiClass div:hover{
+    background-color: #d6cdbd !important;
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.subUlClass div:hover{
     background-color: #eeeeee !important;
-    margin-bottom: 3px;
+    display: block;
 }
 
 .subUlClass li{
-    min-height: 40px;
-}
-
-.subUlClass li a{
-    min-height: 40px;
-    background-color: white;
+    font-size: 14px;
+    margin-left: -30px;
     display: block;
 }
 
+.subUlClass li div{
+    font-weight: bold;
+    background-color: transparent;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
 
-.servicesPClass{
-    margin-left: 50px;
-    text-align: left;
-    font-size:28px;
+.sub2UlClass div:hover{
+    background-color: #eeeeee !important;
+    display: block;
+}
+
+.sub2UlClass li{
+}
+
+.sub2UlClass li div{
+    font-weight: normal !important;
+    color:#a08d55 !important;
+    background-color: transparent;
+    display: block;
+}
+
+.sub3UlClass div:hover{
+    background-color: #eeeeee !important;
+    display: block;
+}
+
+.sub3UlClass li{
+}
+
+.sub3UlClass li div{
+    color:#bcbcb9 !important;
+    background-color: transparent;
+    display: block;
 }
 
 .mainLiClassActive{
-    margin-top: 3px;
     display: block;
-    height: 44px;
     background-color: #d6cdbd !important;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.subUlClassActive{
+    display: block;
+}
+
+.sub2UlClassActive{
+    display: block;
+}
+
+.doctorsClass{
+    min-height: 600px;
+    min-width: 900px;
+    width: 100%;
+    height: 100%;
+    max-width: 1366px;
+    text-align: center;
+    color:#9d8758;
 }
 
 .aboutUsClass{
@@ -221,9 +268,20 @@ html, body {
     min-width: 900px;
     width: 100%;
     height: 100%;
+    max-width: 1366px;
     text-align: center;
     color:#9d8758;
-    margin-top: 150px;
+    margin:auto;
+}
+
+.serviceClass{
+    min-height: 600px;
+    min-width: 900px;
+    width: 100%;
+    height: 100%;
+    max-width: 1366px;
+    text-align: center;
+    margin:auto;
 }
 
 .aboutUsSubClass{
@@ -265,9 +323,19 @@ html, body {
 .aboutUsMainLiClass{
     line-height: 50px;
     max-height: 50px;
-    border-bottom: 2px solid #d6cdbd;
-    background-color: white;
+    border-bottom: 1px solid #d6cdbd;
+    background-color: transparent;
     cursor: pointer;
+}
+.plusSignServiceClass{
+    font-size: 11px;
+    position:absolute;
+    right:10px;
+
+}
+.plusSignClass{
+    position:absolute;
+    right:10px;
 }
 
 .tempoHoverClass{
@@ -279,4 +347,251 @@ html, body {
     background-color:#d6cdbd;
     color: #d6cdbd;
     visibility: hidden;
+    font-family:"Times New Roman", Times, serif;
+}
+
+.tempoClickClass{
+    display:inline-block; 
+    vertical-align:top;  
+    margin-top:3px; 
+    height:44px; 
+    max-width:7px; 
+    background-color:#d6cdbd;
+    color: #d6cdbd;
+    font-family:"Times New Roman", Times, serif;
+}
+
+.contactClass{
+
+    height: 650px;
+    width:1200px;
+    background-color: #f2f2f2;
+    text-align: left;
+    margin: auto;
+}
+.contactDivClass{
+    margin-left:155px; 
+    margin-top:50px; 
+    vertical-align:top; 
+    display:inline-block; 
+    text-align:center;
+}
+
+.contactSubHeaderClass{
+
+    margin-top: 10px;
+    color:#a08d55;
+    line-height:25px; 
+    font-weight: bold;
+    font-family: Raleway, sans-serif;
+}
+
+.contactLowestClass{
+
+    color:#494949;
+    font-family:"Courier New", Courier, monospace;
+}
+
+.borderTopBotClass{
+    border-top: 50px solid white;
+    border-bottom: 50px solid white;
+}
+
+.aHrefNoneClass{
+    text-decoration: none;
+    color: white;
+}
+
+.fontHelveticaClass{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.fontRalewayClass{
+    font-family: Raleway, sans-serif;
+}
+
+.fontCondensedClass{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.boxShadowClass{       /*right bottom width thickness*/
+    -webkit-box-shadow: 5px 5px 20px 2px #bebebe; /*webkit is for chrome/safari/opera*/
+       -moz-box-shadow: 5px 5px 20px 2px #bebebe; /*moz is for firefox*/
+            box-shadow: 5px 5px 20px 2px #bebebe; /*all*/
+}
+
+.lightShadowClass{       /*right bottom width thickness*/
+    -webkit-box-shadow: 1px 1px 2px 1px #444444; /*webkit is for chrome/safari/opera*/
+       -moz-box-shadow: 1px 1px 2px 1px #444444; /*moz is for firefox*/
+            box-shadow: 1px 1px 2px 1px #444444; /*all*/
+}
+
+.facebookClass{
+    background-image:url(../image/facebook.png);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top:22px;
+    right:190px;
+    z-index: 9998;
+    background-size: 40px 40px;
+}
+
+.facebookClass:hover{
+    background-image:url(../image/facebookHover.png);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top:22px;
+    right:190px;
+    z-index: 9998;
+    background-size: 40px 40px;
+}
+
+.twitterClass{
+    background-image:url(../image/twitter.png);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top:22px;
+    right:140px;
+    z-index: 9998;
+    background-size: 40px 40px;
+}
+
+.twitterClass:hover{
+    background-image:url(../image/twitterHover.png);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top:22px;
+    right:140px;
+    z-index: 9998;
+    background-size: 40px 40px;
+}
+
+.instagramClass{
+    background-image:url(../image/instagram.png);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top:22px;
+    right:90px;
+    z-index: 9998;
+    background-size: 40px 40px;
+}
+
+.instagramClass:hover{
+    background-image:url(../image/instagramHover.png);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top:22px;
+    right:90px;
+    z-index: 9998;
+    background-size: 40px 40px;
+}
+
+.languageClass{
+    color: rgb(138, 121, 38);
+    position: fixed;
+    top:33px;
+    right:250px;
+    z-index: 9998;
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.languageClass:hover{
+    color: white; 
+    position: fixed;
+    top:33px;
+    right:250px;
+    z-index: 9998;
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bannerContentClass{
+    text-align: justify;
+    color:rgb(235, 223, 203);
+}
+
+.contactMarginBottomClass{
+    margin-bottom: 10px;
+    color:#a08d55;
+}
+.doctorClass{
+    width: 550px;
+    cursor: pointer;
+}
+.doctorClass:hover{
+    width: 550px;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 2px 1px #444444; /*webkit is for chrome/safari/opera*/
+       -moz-box-shadow: 1px 1px 2px 1px #444444; /*moz is for firefox*/
+            box-shadow: 1px 1px 2px 1px #444444; /*all*/
+}
+
+.fontTrebuchetClass{
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+.plusSignDivClass{
+    background-image: url(../image/plusSign.png);
+    height: 25px;
+    width: 25px;
+    z-index: 99999;
+    opacity: 0.7;
+}
+
+.moleClass{
+    background-image: url(../image/mole.png);
+    height:200px;
+    width:400px;
+    background-size: 400px 200px;
+    position: absolute;
+    top:220px;
+    left: 510px;
+    display: none;
+}
+.poreClass{
+    background-image: url(../image/pore.png);
+    height:200px;
+    width:400px;
+    background-size: 400px 200px;
+    position: absolute;
+    top:243px;
+    left: 421px;
+    display: none;
+}
+
+.acneClass{
+    background-image: url(../image/acne.png);
+    height:200px;
+    width:400px;
+    background-size: 400px 200px;
+    position: absolute;
+    top:343px;
+    left:501px;
+    display: none;
+}
+
+.saggingSkinClass{
+    background-image: url(../image/saggingSkin.png);
+    height:200px;
+    width:400px;
+    background-size: 400px 200px;
+    position: absolute;
+    top:343px;
+    left:501px;
+    display: none;
 }

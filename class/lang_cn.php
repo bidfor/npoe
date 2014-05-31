@@ -2,7 +2,7 @@
 
 $lang = array(
 
-	'10000' => '简体中文',
+	'10000' => 'English',
 	'10001' => 'HOME',
 	'10002' => 'SERVICES',
 	'10003' => 'NEWS',
@@ -28,14 +28,6 @@ $lang = array(
 		ambience to the comfort and privacy of your sanctuary. 
 		We hope to make your visit a memorable one.',
 	'10010' => '"We want our customers to indulge in a boutique experience"',
-	'10011' => 'Welcome to revival medical clinic! A warm welcome from us with the passion in cosmetic medicine, attention to detail and caring attitude are evident from the first time you meet our team. We believe that the best physical and mental outcomes are natural and enhancing. Ultimately improving and boosting the patient&#39;s sense of self and well-being! It&#39;s all about freedom of expression.',
-	'10012' => 'Dr. Kavin and Dr. Lynda founded revival medical clinic back in 2012, 
-				it has been their lifelong passion to offer ageless beauty without 
-				surgery using modern and safe aesthetic procedure. They constantly 
-				strive to inspire people towards improving and maintaining their physical 
-				and mental wellness. After obtaining their medical degree respectively, 
-				Dr. Kavin and Dr Lynda continue participating actively in international 
-				conferences on Aesthetic Medicine.',
 
 );
 
